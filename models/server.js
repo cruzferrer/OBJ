@@ -19,28 +19,30 @@ class Server {
         // Middlewares
         this.middlewares();
 
-        // Rutas
-        this.routes();
-
         // Sockets
         this.sockets();
     }
 
+    /**
+     * 
+     * son los mediadores entre el public y el server,
+     * se necesitan porque el metodo va de carpe en carpe, quiero tacos.
+     * 
+     */
+
 
     middlewares() {
 
-        // CORS
-        //this.app.use( cors() );
-
-        // Lectura y parseo del body
         this.app.use( express.json() );
-
-        // Directorio Público
+        // ni de pedo voy a usar cors
         this.app.use( express.static('public') );
-    }
-
-    routes() {        
-        //this.app.use( this.paths.connect, require('../routes/connect'));                
+        /*
+         *
+         * 
+         * esto entra al public mi pilin 
+         * 
+         */
+        
     }
 
     sockets(){

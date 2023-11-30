@@ -12,7 +12,7 @@ const boardControl = ( size ) => {
 
     const getNewY = (x, y) => {
         let s = board[0].length-1;  
-        //console.log( s )   
+        console.log( s )   
         while( size >= 0 ){
             if( board[s][x] === null ){
                 return s;

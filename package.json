@@ -1,7 +1,7 @@
 {
   "name": "conecta4-online",
   "version": "0.1.0",
-  "description": "",
+  "description": "juego con socket de conecta 4 con un cha",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
